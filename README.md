@@ -11,8 +11,7 @@ The Ghibli Project is a Django project that utilizes Django REST Framework (DRF)
 - [API Documentation](#api-documentation)
   - [Endpoints](#endpoints)
 - [Tests](#tests)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Getting Started
 
@@ -32,14 +31,23 @@ Make sure you have the following installed:
    git clone https://github.com/shreyashvetal/baotest.git
 
 2. Navigate to the project directory:
-  cd baotest
 
-4. Install dependencies:
+    ```bash
+    cd baotest
+
+3. Install dependencies:
+
+    ```bash
     pip install -r requirements.txt
-5. Apply migrations:
-  python manage.py migrate
-6. Run the development server:
-  python manage.py runserver
+4. Apply migrations:
+
+    ```bash
+    python manage.py migrate
+5. Run the development server:
+
+    ```bash
+    python manage.py runserver
+
   The API should be accessible at http://127.0.0.1:8000/.
 
 ## Project Structure
@@ -52,7 +60,9 @@ tests: Directory for test files.
 For API documentation, refer to https://ghibli.rest/docs/.
 
 ### Endpoints
-GET /api/movies/: Retrieve a list of movies with details.
-Tests
+GET **/api/movies/**: Retrieve a list of movies with details.
+## Tests
 Run tests using the following command:
-  python manage.py test ghibli_app.tests
+
+
+    python manage.py test ghibli_app.tests
